@@ -75,7 +75,7 @@ export default function App() {
       const result = parser.evaluate(input);
 
       if (typeof result === 'number') {
-        if (Math.abs(result) >= 1000000) {
+        if (Math.abs(result) >= 1000000 || Math.abs(result) <= 0.01) {
           // huge number
           return format(result, {
             notation: 'exponential',
