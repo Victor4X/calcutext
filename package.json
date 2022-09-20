@@ -12,25 +12,25 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "classnames": "2.3.1",
-    "mathjs": "10.6.1",
-    "react": "17.0.0",
-    "react-dom": "17.0.0",
-    "uuid": "8.3.2"
+    "classnames": "2.3.2",
+    "mathjs": "11.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "uuid": "9.0.0"
   },
   "devDependencies": {
-    "eslint": "6.6.0",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "7.0.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-prettier": "3.2.0",
-    "eslint-plugin-react": "7.21.5",
-    "eslint-plugin-react-hooks": "4.0.0",
-    "prettier": "2.2.0",
-    "react-scripts": "3.4.3",
-    "styled-jsx": "3.3.1",
-    "typescript": "3.8.3"
+    "eslint": "8.23.1",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "2.7.1",
+    "react-scripts": "5.0.1",
+    "styled-jsx": "5.0.7",
+    "typescript": "4.8.3"
   },
   "browserslist": [
     ">0.2%",

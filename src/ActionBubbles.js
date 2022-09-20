@@ -25,7 +25,7 @@ export default function ActionBubbles({
         )}
       </div>
 
-      <style jsx="true">
+      <style jsx>
         {`
           .actionbubbles {
             align-items: center;

@@ -237,7 +237,7 @@ export default function Banner() {
             </div>
           </div>
 
-          <style jsx="true">
+          <style jsx>
             {`
               .menu {
                 background-color: #fafafa;

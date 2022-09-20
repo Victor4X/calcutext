@@ -65,7 +65,7 @@ export default function App() {
         </div>
       </AppContext.Provider>
 
-      <style jsx="true" global="true">
+      <style jsx global>
         {`
           * {
             box-sizing: border-box;
