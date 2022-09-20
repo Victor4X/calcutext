@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 
 import { AppContext } from './Contexts';
 import Banner from './Banner';
@@ -47,25 +47,28 @@ export default function App() {
     );
   }, [activeTextId, settings, texts]);
 
+  const contextValues = useMemo(
+    () => ({
+      activeTextId,
+      setActiveTextId,
+      texts,
+      setTexts,
+      settings,
+      setSettings,
+    }),
+    [],
+  );
+
   return (
     <>
-      <AppContext.Provider
-        value={{
-          activeTextId,
-          setActiveTextId,
-          texts,
-          setTexts,
-          settings,
-          setSettings,
-        }}
-      >
+      <AppContext.Provider value={contextValues}>
         <div className="app">
           <Banner />
           <TextArea />
         </div>
       </AppContext.Provider>
 
-      <style jsx="true" global="true">
+      <style jsx global>
         {`
           * {
             box-sizing: border-box;

@@ -70,9 +70,11 @@ export default function App() {
     try {
       // Pre-parse input
       // Used to ignore underscores in numbers to enable rust-like syntax
-      input = input.replace(/\b([\d_]+)/gi, (match) => (match.replace(/_/gi,'')));
+      const filteredInput = input.replace(/\b([\d_]+)/gi, (match) =>
+        match.replace(/_/gi, ''),
+      );
 
-      const result = parser.evaluate(input);
+      const result = parser.evaluate(filteredInput);
 
       if (typeof result === 'number') {
         if (Math.abs(result) >= 1000000) {
@@ -325,7 +327,7 @@ export default function App() {
         )}
       </div>
 
-      <style jsx="true" global="true">
+      <style jsx global>
         {`
           * {
             box-sizing: border-box;
@@ -366,7 +368,7 @@ export default function App() {
         `}
       </style>
 
-      <style jsx="true">
+      <style jsx>
         {`
           .container-outer {
           }

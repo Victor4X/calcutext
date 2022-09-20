@@ -7,6 +7,15 @@
     "react/jsx-curly-newline": 0,
     "react/jsx-filename-extension": 0,
     "react/jsx-one-expression-per-line": 0,
-    "react/no-danger": 0
+    "react/no-danger": 0,
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": [
+          "jsx",
+          "global"
+        ]
+      }
+    ]
   }
 }
